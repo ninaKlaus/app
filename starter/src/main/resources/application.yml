@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: root
+    password: 241580
+    url: jdbc:mysql://localhost:3306/mail?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  servlet:
+    context-path: /app
