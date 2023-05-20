@@ -12,9 +12,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserDTO {
 
-    private String id;
+    private Integer id;
 
     private String name;
 
     private String password;
+
+    private String captcha;
 }
