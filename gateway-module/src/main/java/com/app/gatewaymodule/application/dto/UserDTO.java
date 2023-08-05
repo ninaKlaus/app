@@ -19,4 +19,7 @@ public class UserDTO {
     private String password;
 
     private String captcha;
+
+    private String addr;
+
 }

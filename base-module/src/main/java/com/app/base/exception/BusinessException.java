@@ -12,10 +12,14 @@ import javax.annotation.Resource;
  */
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class BusinessException extends RuntimeException{
 
     private Integer code;
 
     private String msg;
+
+
+    public BusinessException() {
+    }
+
 }

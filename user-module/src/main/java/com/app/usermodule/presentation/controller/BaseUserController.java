@@ -1,14 +1,12 @@
 package com.app.usermodule.presentation.controller;
 
 import com.app.base.response.Response;
-import com.app.usermodule.application.service.UserApplicationService;
 import com.app.usermodule.domain.user.model.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 
 /**
  * @author ninaklaus
@@ -18,8 +16,6 @@ import javax.annotation.Resource;
 @RequestMapping("/user/base/")
 public class BaseUserController {
 
-    @Resource
-    private UserApplicationService userApplicationService;
 
 
     @ApiImplicitParam(name = "user", value = "用户信息")
