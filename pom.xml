@@ -24,6 +24,7 @@
         <module>starter</module>
         <module>user-module</module>
         <module>gateway-module</module>
+        <module>redis-module</module>
     </modules>
 
     <build>
