@@ -57,11 +57,6 @@ public class JedisConnectionFactory {
         // 省略getter和setter
     }
 
-    public static void main(String[] args) {
-        String src = "13c71fa934e54657a3211e3983955f60";
-        System.out.println("src = " + src.length());
-    }
-
 //    public static void main(String[] args) {
 //
 //        YourObject obj1 = new YourObject();
