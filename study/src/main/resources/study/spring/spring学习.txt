@@ -1,0 +1,23 @@
+spring  五大篇章
+   1 容器和Bean
+   2 AOP
+   3 Web MVC
+   4 spring boot
+   5 其他
+
+
+1. 容器接口
+
+    实体类（Entity Class）和Bean的区别:
+        实体类是用于描述业务领域中的实体对象，而Bean是Spring框架中由容器管理的对象。在实际开发中，一个实体类可以成为一个Spring Bean，用于实现业务逻辑并由Spring容器进行管理。
+    BeanFactory能做那些事情？（到启动类上面ctrl+alt+u  看下类图）
+        BeanFactory是spring的核心接口，提供了高级配置机制，可以管理任何类型的对象。
+        主要的ApplicationContext是BeanFactory的子接口，提供了更多的高级特性。
+        BeanFactory是一个工厂模式接口，它的实现类可以管理任何类型的对象。
+        主要作用:  1. 管理和创建 Bean  2. 依赖注入  3. 实现 IoC 容器  4. 实现 AOP 6. 实现外部配置和扩展
+        主要实现类:
+    ApplicationContext能做那些事情？
+
+        (除了BeanFactory)一些其他拓展功能 : 国际化(MessageSource), 资源路径统配符(ResourcePatternResolver),事件发布(ApplicationEventPublisher),环境配置能力(EnvironmentCapable)
+    BeanFactory和ApplicationContext的区别？
+    事件解耦。
