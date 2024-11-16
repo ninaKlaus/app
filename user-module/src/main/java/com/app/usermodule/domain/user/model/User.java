@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import nonapi.io.github.classgraph.json.Id;
 
 import java.util.Date;
 
@@ -18,7 +19,8 @@ public class User {
     /**
      * 用户ID
      */
-    private Integer id;
+    @Id
+    private String id;
 
     /**
      * 用户名
@@ -64,22 +66,6 @@ public class User {
      * 地址
      */
     private String address;
-
-    /**
-     * 状态，0：禁用，1：启用
-     */
-    private int status;
-
-    /**
-     * 最后登录时间
-     */
-    private Date lastLoginTime;
-
-    /**
-     * 最后登录IP
-     */
-    private String lastLoginIp;
-
     /**
      * 用户来源，如：微信、QQ等
      */
@@ -91,12 +77,54 @@ public class User {
     private String sourceId;
 
     /**
+     * 备注
+     */
+    private String remark;
+    /**
+     * 是否有效
+     */
+    private String isEnabled;
+    /**
+     * 是否删除
+     */
+    private String isDeleted;
+    /**
      * 创建时间
      */
-    private Date createdAt;
+    private Date crtTime;
 
     /**
-     * 更新时间
+     * 创建用户Id
      */
-    private Date updatedAt;
+    private Date crtUser;
+
+    /**
+     * 创建用户名称
+     */
+    private Date crtUserName;
+
+    /**
+     * 创建用户主机
+     */
+    private Date crtHost;
+
+    /**
+     * 最后更新时间
+     */
+    private Date updTime;
+
+    /**
+     * 最后用户Id
+     */
+    private Date updUser;
+
+    /**
+     * 最后用户名称
+     */
+    private Date updUserName;
+
+    /**
+     * 最后用户主机
+     */
+    private Date updHost;
 }
